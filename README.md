@@ -42,6 +42,14 @@
 - http://34.22.95.241:8080/login (로그인)
 - http://34.22.95.241:8080/data/{categoryname} (데이터 요청)
 
+#### 앤드포인트별 요청방법1
+- 회원가입: HTTP BODY에 JSON형식으로 담아 POST 요청
+- 중복 id 체크: {checkmemberid}에 사용자가 입력한 아이디를 담아서 GET 요청
+- 로그인: HTTP BODY에 JSON형식으로 담아 POST 요청
+- 데이터 요청: {categoryname}에 사용자가 입력한 카테고리명을 담아서 GET 요청
 
-
-
+#### 앤드포인트별 요청방법2
+- 회원가입: JSON 형식 -> {"memberId" : "hwang00", "password" : "hwang00!","name" : "hwang"} (키만 불변, 값은 가변)
+- 중복 id 체크: http://34.22.95.241:8080/id/check/hwang00 형식
+- 로그인: JSON 형식 -> {"memberId" : "hwang00","password" : "hwang00!"} (키만 불변, 값은 가변)
+- 데이터 요청: 다음 4개중 하나를 선택: All, EducationEmployment, HousingIncome, Etc -> http://34.22.95.241:8080/data/All 이런식
