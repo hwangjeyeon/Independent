@@ -52,4 +52,4 @@
 - 회원가입: JSON 형식 -> {"memberId" : "hwang00", "password" : "hwang00!","name" : "hwang"} (키만 불변, 값은 가변)
 - 중복 id 체크: http://34.22.95.241:8080/id/check/hwang00 형식
 - 로그인: JSON 형식 -> {"memberId" : "hwang00","password" : "hwang00!"} (키만 불변, 값은 가변)
-- 데이터 요청: 다음 4개중 하나를 선택: All, EducationEmployment, HousingIncome, Etc -> http://34.22.95.241:8080/data/All 이런식
+- 데이터 요청: 다음 4개중 하나를 선택: All, EducationEmployment, HousingIncome, Etc / 예시 -> http://34.22.95.241:8080/data/All 
